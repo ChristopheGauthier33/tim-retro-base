@@ -1,0 +1,15 @@
+.footer-principal{
+  background-color: var(--black);
+  color: var(--white);
+  height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cardo;
+  font-size: 1.125rem;
+
+  a{
+    text-decoration: none;
+    color: var(--white);
+  }
+}

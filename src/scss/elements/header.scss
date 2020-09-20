@@ -1,0 +1,14 @@
+header{
+  background-color: black;
+  height: 73px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  font-family: var(--retro);
+  color: var(--white);
+  font-size: 2.25rem;
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+}

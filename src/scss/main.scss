@@ -1,12 +1,6 @@
 /*---------------------- Settings ----------------------*/
+@import "settings/root";
 
-:root {
-  --black: #000;
-  --white: #fff;
-  --retro: Bungee Shade;
-
-  --de-principale: linear-gradient(36deg, rgba(167, 2, 154, 0.7) 0%, rgba(167, 2, 154, 0) 100%);
-}
 /*---------------------- Generic ----------------------*/
 
 /* Mettre la ligne universelle pour le box-sizing */
@@ -14,149 +8,17 @@
 
 
 /*---------------------- Elements ----------------------*/
-header{
-  background-color: black;
-  height: 73px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 3;
-  font-family: var(--retro);
-  color: var(--white);
-  font-size: 2.25rem;
-  display: flex;
-  align-items: center;
-  padding-left: 200px;
-}
-
-.hero{
-  background-color: var(--black);
-  height:80vh;
-
-  position: relative;
-}
-
-.hero video{
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  opacity: 0.5;
-}
-
-.hero .content{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  color:var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--de-principale);
-  font-size: 1.5rem;
-}
-
-.hero a{
-  color: white;
-  text-decoration: none;
-  line-height: 50px;
-}
-
-.hero::after{
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}
-
-h2{
-  font-family: var(--retro);
-  font-size: 5rem;
-}
-
-h1{
-  font-family: var(--retro);
-  color: var(--white);
-  font-size: 2.25rem;
-}
-
-.interet .conteneur{
-  font-family: Cardo;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 18px;
-  background-image: url("../images/bg-interet.jpg");
-  background-size: 100% 100%;
-}
-
-h3{
-  font-size: 2.5rem;
-}
-
-.cartes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 200px;
-}
-
-.carte{
-  height: 367px;
-  width: 352px;
-  border: black solid 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  text-align: center;
-  background-color: var(--white);
-}
-
-.citation{
-  height: 404px;
-  background-image: url("../images/bg-citation.jpg");
-  background-position: center;
-  background-size: cover;
-  color:var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 150px;
-  font-family: Cardo;
-}
-
-.footer-principal{
-  background-color: var(--black);
-  color: var(--white);
-  height: 144px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Cardo;
-  font-size: 1.125rem;
-}
-
-.footer-principal a{
-  text-decoration: none;
-  color: var(--white);
-}
+@import "elements/header";
+@import "elements/titre";
+@import "elements/footer";
 
 
 
 
 /*---------------------- Components ----------------------*/
-
-
+@import "components/hero";
+@import "components/carte";
+@import "components/citation";
 
 
 
